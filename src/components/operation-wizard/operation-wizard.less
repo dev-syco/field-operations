@@ -1,0 +1,68 @@
+@import "../../assets/less/vars";
+
+.operation-wizard {
+  &--information {
+    display: flex;
+
+    .culture-component {
+      margin-left: auto;
+    }
+  }
+
+  &--comment textarea {
+    border: none;
+    font-size: 13px;
+    line-height: 19px;
+    letter-spacing: -0.4px;
+
+    &:focus, &:active {
+      outline: none;
+    }
+  }
+}
+
+.ant-drawer {
+  .ant-drawer-title {
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 24px;
+    letter-spacing: -0.933333px;
+  }
+
+  .border-block {
+    padding: 10px 15px;
+
+    &:not(:last-child) {
+      border-bottom: 1px solid #EDEEEE;
+    }
+  }
+
+  &-body {
+    padding: 0 !important;
+  }
+
+  &-header {
+    padding: 10px 15px !important;
+  }
+
+  .footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+    button {
+      width: 100%;
+      box-sizing: border-box;
+      background: @green;
+      text-align: center;
+      padding: 23px 0;
+      font-weight: 500;
+      font-size: 11px;
+      line-height: 13px;
+      letter-spacing: -0.366667px;
+      color: #fff;
+      height: auto;
+      text-transform: uppercase;
+    }
+  }
+}

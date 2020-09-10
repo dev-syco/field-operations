@@ -1,0 +1,67 @@
+{
+  "tableView": {
+    "title": "Операции на поле {name}",
+    "filters": {
+      "all": "Все",
+      "planned": "Запланированные операции",
+      "finished": "Выполненные операции"
+    },
+    "addOperation": "Добавить операцию",
+    "saveOperation": "Сохранить операцию",
+    "headers": {
+      "formatDate": "Дата",
+      "type": "Операция",
+      "culture": "Культура",
+      "assessment": "Качество"
+    }
+  },
+  "operations": {
+    "undefined": "Не задано",
+    "plowing": "Вспашка",
+    "bowling": "Боронование",
+    "fertilization": "Внесение удобрений",
+    "watering": "Полив",
+    "rigging": "Прикатывание",
+    "harvesting": "Сбор урожая"
+  },
+  "culture": {
+    "crop_wheat": "Пшеница озимая"
+  },
+  "assessment": {
+    "excellent": "Отлично",
+    "satisfactorily": "Удовлетворительно",
+    "badly": "Плохо",
+    "short": {
+      "excellent": "Отлично",
+      "satisfactorily": "Удовл.",
+      "badly": "Плохо"
+    },
+    "undefined": "Нет оценки"
+  },
+  "placeholder": {
+    "set": "Задайте",
+    "select": "Выберите",
+    "operationComment": "Комментарий к операции..."
+  },
+  "operationAdding": {
+    "addTitle": "Добавление операции",
+    "editTitle": "Редактирование операции",
+    "operation": "Операция",
+    "date": "Дата проведения",
+    "assessment": "Качество выполнения операции"
+  },
+  "months": [
+    "Январь",
+    "Февраль",
+    "Март",
+    "Апрель",
+    "Май",
+    "Июнь",
+    "Июль",
+    "Август",
+    "Сентябрь",
+    "Октябрь",
+    "Ноябрь",
+    "Декабрь"
+  ]
+}
