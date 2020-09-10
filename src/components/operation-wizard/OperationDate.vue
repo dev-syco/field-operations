@@ -4,7 +4,7 @@
 
 <script lang="ts">
 import { Options, Vue } from 'vue-class-component';
-import moment from 'moment';
+import moment, { Moment } from 'moment';
 import TDate from '@/services/fieldService/models/TDate';
 import { transformMomentToTDate, transformTDatToMoment } from '@/utils';
 
@@ -16,21 +16,19 @@ export enum OperationDateEvents {
   props: ['modelValue'],
 })
 export default class OperationDate extends Vue<{ modelValue: TDate }> {
-  readonly modelValue: TDate;
-
   public updated() {
-    const { year, month, day } = this.modelValue;
+    const { year, month, day } = this.$props.modelValue;
     if (!year || !month || !day) {
-      const defaultDate = transformMomentToTDate(transformTDatToMoment(this.modelValue));
+      const defaultDate = transformMomentToTDate(transformTDatToMoment(this.$props.modelValue));
       this.$emit(OperationDateEvents.VALUE_CHANGED, defaultDate);
     }
   }
 
   public get value() {
-    return transformTDatToMoment(this.modelValue);
+    return transformTDatToMoment(this.$props.modelValue);
   }
 
-  public set value(date: moment) {
+  public set value(date: Moment) {
     this.$emit(OperationDateEvents.VALUE_CHANGED, transformMomentToTDate(date));
   }
 }

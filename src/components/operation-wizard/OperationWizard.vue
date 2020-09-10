@@ -71,7 +71,7 @@ export enum OperationWizardEvents {
 export default class OperationWizard extends Vue<{ operation: Operation }> {
   public visible = false;
 
-  public value: Operation = null;
+  public value: Operation | null = null;
 
   public get title() {
     const { operation } = this.$props;
