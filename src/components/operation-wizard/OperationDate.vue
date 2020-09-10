@@ -38,6 +38,7 @@ export default class OperationDate extends Vue<{ modelValue: TDate }> {
 
 <style lang="less">
 .ant-calendar-picker {
+  margin-top: 5px !important;
  .ant-input {
    border: none;
  }
